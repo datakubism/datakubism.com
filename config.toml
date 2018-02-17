@@ -1,0 +1,49 @@
+baseurl = "https://datakubism.com/"
+languageCode = "en-US"
+title = "dataKubism"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+theme = "hugo-sustain"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug"
+
+[params]
+  avatar = "profile.png"
+  author = "dataKubists"
+  description = "Data science predictive analytics consultancy. We bring insights to decision makers."
+
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = []
+
+[params.social]
+  Github        = "username"
+  Email         = "team@datakubism.com"
+  Twitter       = "username"
+  LinkedIn      = "username"
+  Stackoverflow = "username"
+
+## Main Menu
+[[menu.main]]
+  name = "about"
+  weight = 100
+  identifier = "about"
+  url = "/about/"
+[[menu.main]]
+  name = "team"
+  identifier = "team"
+  weight = 200
+  url = "/team/"
+[[menu.main]]
+  name = "projects"
+  identifier = "projects"
+  weight = 300
+  url = "/projects/"
+[[menu.main]]
+  name = "blog"
+  weight = 400
+  identifier = "blog"
+  url = "/blog/"
