@@ -5,6 +5,7 @@ html, body {
   font-family: 'Source Sans Pro', sans-serif;
   /* The html and body elements cannot have any padding or margin. */
   border-top: 3px solid #005073;
+  color:#005073;
 }
 
 /* Wrapper for page content to push down footer */
@@ -215,3 +216,23 @@ div.footer{
   padding-bottom: 15px;
   
 }*/
+
+#leftThing {
+  width: 33%;
+  display: inline-block;
+  font-size: 18px;  
+}
+#middleThing {
+  width: 33%;
+  display: inline-block;
+  font-size: 18px;
+}
+#rightThing {
+  width: 33%;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.label-success{
+  background-color:#189ad3;
+}
