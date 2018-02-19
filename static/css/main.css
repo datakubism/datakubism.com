@@ -96,6 +96,10 @@ html, body {
   color: #005073;
   font-size: 68px;
 }
+.containerH2 {
+  color: #005073;
+  font-size: 20px;
+}
 
 #console {
 	color: #E9E6E6;
@@ -233,5 +237,5 @@ div.footer{
 
 .customCode {
 	font-size: 35px; 
-text-align: left;	
+	text-align: left;	
 }
