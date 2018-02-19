@@ -96,26 +96,7 @@ html, body {
   color: #005073;
   font-size: 68px;
 }
-.containerC {
-  width: auto;
-  max-width: 920px;
-  margin: auto;
-  font-size: 38px;
-  color: #A55402;
-  text-align: left;
-  background-color: #1C1C1C;
-  font-family: 'Lucida Terminal', sans-serif;
-}
-.containerCC {
-  width: auto;
-  max-width: 920px;
-  margin: auto;
-  font-size: 38px;
-  color: #A55402;
-  text-align: left;
-  background-color: #1C1C1C;
-  font-family: 'Lucida Terminal', sans-serif;
-}
+
 #console {
 	color: #E9E6E6;
 }
@@ -248,4 +229,9 @@ div.footer{
 
 .label-success{
   background-color:#189ad3;
+}
+
+.customCode {
+	font-size: 35px; 
+text-align: left;	
 }
