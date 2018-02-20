@@ -1,0 +1,268 @@
+---
+title: "Data Science Style Guide and Git Workflow"
+author: "Deyan Spasov"
+date: 2018-02-19T21:13:14-05:00
+categories: ["R"]
+tags: ["R", "git"]
+---
+
+  This document aims to describe a Data Science workflow which I am an advocate for.
+Data Science is a broad field which involves lots of coding. In order not to get 
+lost in your own code it is vital to follow some guidelines. Most of the points 
+discussed in this document have been borrowed from software engineering. After
+all it is a much more mature field and best practices have managed to shiny out
+and stay around.
+
+  I will try to be as concise as possible but at the same time I will try to cover
+all main things which need to be considered. Where appropriate, I will be giving 
+links to more resources. Feel free to skip the sections which you do not find 
+interesting or you have a well established workflow yourself.
+  
+  We start with an overview of the usual/old school conventions that we, the
+data scientists, need to follow, then we discuss a proposed workflow for git, 
+and finally, a real world example is given in order for it to serve as a quick 
+reference guide if you ever need to go back to this tutorial.
+
+# The Usual And Boring Stuff
+
+  Here is a list of the things we will go through in this sections:  
+  
+  
+  1. **R-projects**  
+  2. **Folder Structures**  
+  3. **Naming Conventions**
+  4. **Code Conventions**  
+  5. **Code Consistency**  
+  6. **Documenting Your Code**  
+  7. **Documenting Your Functions**  
+
+
+###R-projects
+
+  Every single work you do in R should be done as a R-studio project.
+The benefits of this are that you work becomes much more reproducible. You could
+easily share your work with others and the paths within you code are no longer 
+absolute but are relative to the folder where your project is started. Occasionally, 
+you should be restarting your r session `(ctrl + shift + f10)`, because not doing 
+so sometimes leads to 
+bugs within your code. E.g. There is a variable that is left in the global environment
+and you use it thinking it is still a part of your code, but once you go back to the 
+task the next day, you realize you have deleted the part of the code which created that
+variable.
+
+  Here is an article which covers the topic : [Project-oriented workflow](https://www.tidyverse.org/articles/2017/12/workflow-vs-script/)
+
+###Folder Structures
+
+  A very detailed preject template could be found at [here](http://projecttemplate.net/architecture.html). What I have taken from that template 
+and use most often is the following folder structure:  
+
+* R - This is where all .R scripts are saved.  
+
+* data - The customer provided data is within.  
+
+* cache - Whenever there is a intermediary dataframe which usually takes a 
+long time to be computed, that's where you can find it.  
+
+* plots - All plots are saved within.  
+
+* reports - All .rmd or .xlsx documents reside here. The two subfolders are 
+pretty self-explanatory.
+    + Send to client 
+    + Final deliverables
+
+  In any of these folders you could have other meaningfully-named sub-folders.
+E.g plots/distributions, plots/scatters. It is up to you and the specifics of the
+project to figure this out.
+
+###Naming Convention
+
+  OK. Once we have figured out the folder structure, we should turn out attention
+to naming conventions. The two things to have in mind are: **file names need to be meaningful** and if files need to be run in sequence **prefix them with numbers**. 
+In general, I try to use camelCase when I write code and snake_case when I name files.
+
+###Code Convention
+
+  R has a community-agreed (more or less) style guide which could be found in several
+places: [The predecesor](https://google.github.io/styleguide/Rguide.xml), [The tidyverse guide](http://style.tidyverse.org/files.html), [Hadley's own advanced R advices](http://adv-r.had.co.nz/Style.html)
+
+  Here is a summary of the most important things that need to be followed as closely as possible:
+
+* Function names should usually be **verbs**. It is nice if you capitalize them, e.g. `Shuffle`,
+in order to distinguish your own functions from package and base functions.
+
+* Variables names should usually be **nouns** and lowercased. 
+
+* In your code use only snale_case or camelCase. Do not mix both.
+
+* Indent your code. Seriously, **indent your code**. This helps to improve readability 
+which is very important if you code all day long.
+
+* Put spaces around all operators `= - + <-`
+
+For more information **do** look at the [guidelines.](http://style.tidyverse.org/)
+
+###Code Consistency
+
+  If several people are working on the same project, one could usually tell who wrote
+what. There is nothing bad about this, however, it could get messy sometimes, especially
+if people come from different universes. 
+
+  R has evolved from a tool to help mainly statisticians to a general purpose language.
+However, in its early days lots of the base function were created as a necessity and not thought of as a part of a broader architecture. There are many examples here, 
+but the one that comes to mind is the apply family. Most of the functions there 
+have the `...` argument, whilst mapply has the MoreArgs. Most of the functions 
+take the data as their first argument, whiles mapply takes the `FUN`. Sapply is 
+not consistent in its output - sometimes it gives you back a list, sometimes a vector. 
+And so on ... You get the idea, but if you want to read more about it - [click here](https://jennybc.github.io/purrr-tutorial/bk01_base-functions.html)
+
+  When you write code it is always nice to know what to expect from your functions 
+and it is always nice for your functions to be able to work with one another. 
+These are some of the reasons Hadley Wickham, the great team of RStudio and many 
+other contributers are developing the [tidyverse](https://www.tidyverse.org/).
+
+
+There is a nice explanation of what the tidyverse is [here](https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/)
+
+To put it simple, it is a universe of packages which are designed to go together well. 
+They embrace [tidy data](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html) and functional programming. They are written with humans in mind (computer 
+efficiency is a secondary concern) and make great use of the pipe, `%>%`, which greatly improves readability of your code.
+
+As there are more and more packages which try to follow the tidyverse philosophy,
+Hadley recently wrote the ['The tidy tools manifesto'](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html).
+
+###Documenting Your Code
+
+  Documentation is many times overlooked but it is one of the most important 
+aspects of a project. You should always be thinking of other people and future
+you coming back to your work. In order to save time and not having to go through 
+all the code, you do need to have proper documentation and comments.
+
+  To my mind, three things are most important here:
+    1. **Do have a readme file** - That is where the project overview is. Additionally, 
+    quickly go through all steps taken during the analysis, the ones that worked
+    and the ones that did not. Have a section where you explain how to reproduce
+    your analysis step by step.
+    2. **Organize your code into files and chunks** - Each different part of the
+    analysis should go into its own file. E.g *data_exploration.R*, *data_prep.R*,
+    *modeling_gbm.R*, etc. Within these files, organize the workflow into chunks
+    of code `(ctrl + shift + r)` and write consice and meaningful comments within
+    these chunks to record findings and analysis decisions.
+    3. **Document your functions** - This is the topic of the next section
+  
+
+###Documenting Your Functions
+
+  Functions in general should do one thing, and one thing only. However, once you
+start preparing your code for production, you would notice that you need to 
+write a function that is comprised of other functions in order for it to be 
+scheduled easily. These 'monster' functions need to be well documented for others
+and future you to understand. 
+
+  Once you are happy with a function you have written, documenting it should be the
+first thing you do. If the project is not that big, or the function is not that 
+important, it is perfectly fine to explain what the function does within its body. 
+There should be at least three main points present within the documentation as shown [here](https://google.github.io/styleguide/Rguide.xml#functiondocumentation): 
+
+* **Description** - A short descriptio of what the function does.
+    
+* **Input** - Explain what each of the arguments is for and what is its 
+expected type.
+
+* **Output** - What is the function going to output 
+
+  However, if it is a big project in which other people are going to be involved
+in the future, you should be documenting your functions using the [roxygen package](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html)
+The principles are the same, but you use a slightly queerer syntax so that
+in the end you get your documentation in the familiar .Rd format. Yes, that
+format is familiar because this is what you see when your write `?functionName` 
+in the R console. And, yes, you would be able to write `?myFunction` and see 
+your documentation in the Help tab.
+
+# Uh, oh, Git
+
+  Ok, now we are heading into deeper waters. Any self-respecting coder(developer, 
+data scientist, etc.) have to use a version control software. Git is the most 
+popular one simply because it is the best. You have a remote backup, you do 
+branching and merging easily, and it gives you full freedom to create your own workflow. 
+
+  As I mentioned in the beginning, I have borrowed my workflow from the matured 
+field of software engineering. What I use in my projects is the so called [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
+
+  The idea is that all feature development should take place in a dedicated branch.
+If you are producing a shiny dashboard or any other product as a final outcome of
+your project, then feature stands for feature. If you are working on a regular data
+analysis project, then feature stands for: data prepping, visualizing, modeling, etc.
+
+  The main benefits of this workflow are **reproducibility**, **cooperation**
+and **tidiness**. 
+
+#####Here is how it works:
+  
+  1. You initialize a repository
+  2. You create a new branch for each of the main stages of your data analysis
+  project - *data gathering, cleaning, visualization, modeling, etc*.
+  These branches more or less follow the naming convention of the files in your
+  `/R` folder, however, if a certain operation takes more effort, these could be
+  the names of subfolders within `/R`, eg.`/R/data_gathering/scrape_google.R`
+  3. Every time you need to work on any of these feature you:
+  
+  
+        git checkout featureX
+        git pull #in case anyone else is working on the feature as well
+        git merge master #to get to the latest point of your analysis
+        
+        # do some work here
+        
+        git add .
+        git commit -m "did some great work"
+        git pull # again just in case
+        git push
+        git checkout master
+    
+  4. Once your work on the feature is done you should:
+    
+        
+        git checkout master
+        git merge featureX   
+        
+  5. If you reached a milestone in the project, e.g. finished with data gathering,
+  you:
+  
+        
+        git tag -a v0.1 -m "Data gathering is complete."
+ 
+  You should aim to have a master branch which when revisited could be rerun easily and it will reproduce fully your analysis. It more or less should serve the purpose of a markdown notebook. Anyone from the future looking at it should be comfortable with what you did.
+
+  If someone is interested further in your project, though, they could checkout to 
+a particular branch, e.g. `git checkout modeling`, and have a look at all different
+approaches you tried. Again, these approaches should be documented in the *readme* file.
+
+  Another advantage that you get from this workflow is that it makes cooperation 
+easy. Once you are done with the initial stages of your project like data gathering
+and probably data cleaning, several people could be trying different modeling approaches
+and not making a mess of the master branch. 
+
+  In addition to this workflow, if you are working on a data science product 
+`shiny dashboard, API development, etc.` instead of a data analysis project you 
+could add a development branch at the very beginning. This is simmilar to the so 
+called the [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+This development branch is used the same way you use the master branch in the Feature 
+Branch Workflow. 
+
+
+  ![](/img/gitflow.png)
+
+  
+  Feature branches interact only with this development branch, and the 
+development branch is the only one interacting with the master branch. Once you have a production ready version of your product, you merge with master and create a tag.
+The idea again is to keep your master branch even tidier. Additionally, it makes it
+easilier to have two separate teams - one working on bug fixing and another on 
+new features.
+
+  The last thing I would like to mention is `git rebase`. If you really care
+about having linear history, when going back to work on a feature branch instead 
+of git merging with master you could use be rebasing. However, in order to do that
+you should be the only one working on that branch. Go [here](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase) if 
+you want to know more about it.
+
