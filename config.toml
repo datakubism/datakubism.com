@@ -1,11 +1,11 @@
 baseurl = "/"
 languageCode = "en-US"
-title = "dataKubism | Data Science at your side"
+title = "dataKubism | Data Science on your side"
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+disqusShortname = "www-datakubism-com"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
-theme = "hugo-sustain"
+theme = "hugo-sustain"  
 layoutdir = "layouts"
 publishDir = "datakubism.github.io"
 

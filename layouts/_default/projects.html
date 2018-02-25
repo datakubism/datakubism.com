@@ -1,0 +1,24 @@
+<section id="projects">
+  <div class="container">
+    <h2>{{ .Site.Data.projects.name }}</h2>
+    <div class="panel panel-default">
+      <div class="panel-body">
+      {{ range $i, $el := .Site.Data.projects.source }}
+		<div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <h5 style="text-align: right">
+                    <i class="{{ .icon }}"></i>&nbsp;&nbsp;
+					<strong>{{ $el.name }}</strong>
+                  </h5>
+                 </div>
+                 <div class="col-sm-8 col-md-8 col-lg-8">
+                   <h5 style="text-align: left">
+                    {{ $el.description }}
+                  </h5>
+                </div>
+              </div>
+      {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

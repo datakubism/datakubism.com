@@ -8,7 +8,7 @@ tags: ["R", "git"]
 
 
 
-<p>This document aims to describe a Data Science workflow which I am an advocate for. Data Science is a broad field which involves lots of coding. In order not to get lost in your own code it is vital to follow some guidelines. Most of the points discussed in this document have been borrowed from software engineering. After all it is a much more mature field and best practices have managed to shiny out and stay around.</p>
+<p>Data Science is a broad field which involves lots of coding. In order not to get lost in your own code, it is vital to follow some guidelines. Most of the points discussed in this post have been borrowed from software engineering. After all it is a much more mature field and best practices have managed to shine out and stay around.</p>
 <p>I will try to be as concise as possible but at the same time I will try to cover all main things which need to be considered. Where appropriate, I will be giving links to more resources. Feel free to skip the sections which you do not find interesting or you have a well established workflow yourself.</p>
 <p>We start with an overview of the usual/old school conventions that we, the data scientists, need to follow, then we discuss a proposed workflow for git, and finally, a real world example is given in order for it to serve as a quick reference guide if you ever need to go back to this tutorial.</p>
 <div id="the-usual-and-boring-stuff" class="section level1">
@@ -30,18 +30,18 @@ tags: ["R", "git"]
 </ol>
 <div id="r-projects" class="section level3">
 <h3>R-projects</h3>
-<p>Every single work you do in R should be done as a R-studio project. The benefits of this are that you work becomes much more reproducible. You could easily share your work with others and the paths within you code are no longer absolute but are relative to the folder where your project is started. Occasionally, you should be restarting your r session <code>(ctrl + shift + f10)</code>, because not doing so sometimes leads to bugs within your code. E.g. There is a variable that is left in the global environment and you use it thinking it is still a part of your code, but once you go back to the task the next day, you realize you have deleted the part of the code which created that variable.</p>
+<p>Every single work you do in R should be done as a R-studio project. The benefits of this are that your work becomes much more reproducible. You could easily share your work with others and the paths within your code are no longer absolute but are relative to the folder where your project is started. Additionally, the project directory is the go to place when you are looking for something.</p>
 <p>Here is an article which covers the topic : <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">Project-oriented workflow</a></p>
 </div>
 <div id="folder-structures" class="section level3">
 <h3>Folder Structures</h3>
-<p>A very detailed preject template could be found at <a href="http://projecttemplate.net/architecture.html">here</a>. What I have taken from that template and use most often is the following folder structure:</p>
+<p>A very detailed project template could be found at <a href="http://projecttemplate.net/architecture.html">here</a>. What I have taken from that template and use most often is the following folder structure:</p>
 <ul>
-<li><p>R - This is where all .R scripts are saved.</p></li>
-<li><p>data - The customer provided data is within.</p></li>
-<li><p>cache - Whenever there is a intermediary dataframe which usually takes a long time to be computed, that’s where you can find it.</p></li>
-<li><p>plots - All plots are saved within.</p></li>
-<li>reports - All .rmd or .xlsx documents reside here. The two subfolders are pretty self-explanatory.
+<li><p><em>R</em> - This is where all .R scripts are saved. Sometimes, you could have a SQL or python subfolder.</p></li>
+<li><p><em>data</em> - The customer provided data is within.</p></li>
+<li><p><em>cache</em> - Whenever there is a intermediary dataframe which usually takes a long time to be computed, that’s where you can find it.</p></li>
+<li><p><em>plots</em> - All plots are saved within.</p></li>
+<li><em>reports</em> - All .rmd or .xlsx documents reside here. The two subfolders are pretty self-explanatory.
 <ul>
 <li>Send to client</li>
 <li>Final deliverables</li>
@@ -51,7 +51,7 @@ tags: ["R", "git"]
 </div>
 <div id="naming-convention" class="section level3">
 <h3>Naming Convention</h3>
-<p>OK. Once we have figured out the folder structure, we should turn out attention to naming conventions. The two things to have in mind are: <strong>file names need to be meaningful</strong> and if files need to be run in sequence <strong>prefix them with numbers</strong>. In general, I try to use camelCase when I write code and snake_case when I name files.</p>
+<p>OK. Once we have figured out the folder structure, we should turn our attention to naming conventions. The two things to have in mind are: <strong>file names need to be meaningful</strong> and if files need to be run in sequence <strong>prefix them with numbers</strong>. In general, I try to use camelCase when I write code and snake_case when I name files. But again, that is something up to you to decide. What matters is that you have a consistent team style.</p>
 </div>
 <div id="code-convention" class="section level3">
 <h3>Code Convention</h3>
@@ -69,37 +69,53 @@ tags: ["R", "git"]
 <div id="code-consistency" class="section level3">
 <h3>Code Consistency</h3>
 <p>If several people are working on the same project, one could usually tell who wrote what. There is nothing bad about this, however, it could get messy sometimes, especially if people come from different universes.</p>
-<p>R has evolved from a tool to help mainly statisticians to a general purpose language. However, in its early days lots of the base function were created as a necessity and not thought of as a part of a broader architecture. There are many examples here, but the one that comes to mind is the apply family. Most of the functions there have the <code>...</code> argument, whilst mapply has the MoreArgs. Most of the functions take the data as their first argument, whiles mapply takes the <code>FUN</code>. Sapply is not consistent in its output - sometimes it gives you back a list, sometimes a vector. And so on … You get the idea, but if you want to read more about it - <a href="https://jennybc.github.io/purrr-tutorial/bk01_base-functions.html">click here</a></p>
-<p>When you write code it is always nice to know what to expect from your functions and it is always nice for your functions to be able to work with one another. These are some of the reasons Hadley Wickham, the great team of RStudio and many other contributers are developing the <a href="https://www.tidyverse.org/">tidyverse</a>.</p>
+<p>R has evolved from a tool to help mainly statisticians to a general purpose language. However, in its early days lots of the base function were created as a necessity and not thought of as a part of a broader architecture. There are many examples here, but the one that comes to mind is the apply family. Most of the functions there have the <code>...</code> argument, whilst <em>mapply</em> has the MoreArgs. Most of the functions take the data as their first argument, whiles mapply takes the <code>FUN</code>. Sapply is not consistent in its output - sometimes it gives you back a list, sometimes a vector. And so on … You get the idea, but if you want to read more about it - <a href="https://jennybc.github.io/purrr-tutorial/bk01_base-functions.html">click here</a></p>
+<p>When you write code it is always nice to know what to expect from your functions and it is always nice for your functions to be able to work with one another. These are some of the reasons Hadley Wickham, the great team of RStudio, and many other contributers are developing the <a href="https://www.tidyverse.org/">tidyverse</a>.</p>
 <p>There is a nice explanation of what the tidyverse is <a href="https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/">here</a></p>
 <p>To put it simple, it is a universe of packages which are designed to go together well. They embrace <a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">tidy data</a> and functional programming. They are written with humans in mind (computer efficiency is a secondary concern) and make great use of the pipe, <code>%&gt;%</code>, which greatly improves readability of your code.</p>
 <p>As there are more and more packages which try to follow the tidyverse philosophy, Hadley recently wrote the <a href="https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html">‘The tidy tools manifesto’</a>.</p>
 </div>
 <div id="documenting-your-code" class="section level3">
 <h3>Documenting Your Code</h3>
-<p>Documentation is many times overlooked but it is one of the most important aspects of a project. You should always be thinking of other people and future you coming back to your work. In order to save time and not having to go through all the code, you do need to have proper documentation and comments.</p>
-<p>To my mind, three things are most important here: 1. <strong>Do have a readme file</strong> - That is where the project overview is. Additionally, quickly go through all steps taken during the analysis, the ones that worked and the ones that did not. Have a section where you explain how to reproduce your analysis step by step. 2. <strong>Organize your code into files and chunks</strong> - Each different part of the analysis should go into its own file. E.g <em>data_exploration.R</em>, <em>data_prep.R</em>, <em>modeling_gbm.R</em>, etc. Within these files, organize the workflow into chunks of code <code>(ctrl + shift + r)</code> and write consice and meaningful comments within these chunks to record findings and analysis decisions. 3. <strong>Document your functions</strong> - This is the topic of the next section</p>
+<p>Documentation is many times overlooked but it is one of the most important aspects of a project. You should always be thinking of other people, and future you, coming back to your work. In order to save time and not having to go through all the code, you do need to have proper documentation and comments.</p>
+<p>To my mind, three things are most important here:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Do have a readme file</strong> - That is where the project overview is. Additionally, you should quickly go through all steps taken during the analysis, the ones that worked and the ones that did not. Have a section where you explain how to reproduce your analysis step by step.</li>
+<li><strong>Organize your code into files and chunks</strong> - Each different part of the analysis should go into its own file. E.g <em>data_exploration.R</em>, <em>data_prep.R</em>, <em>modeling_gbm.R</em>, etc. Within these files, organize the workflow into chunks of code <code>(ctrl + shift + r)</code> and write consice and meaningful comments within these chunks to record findings and analysis decisions.</li>
+<li><strong>Document your functions</strong> - This is the topic of the next section</li>
+</ol>
 </div>
 <div id="documenting-your-functions" class="section level3">
 <h3>Documenting Your Functions</h3>
 <p>Functions in general should do one thing, and one thing only. However, once you start preparing your code for production, you would notice that you need to write a function that is comprised of other functions in order for it to be scheduled easily. These ‘monster’ functions need to be well documented for others and future you to understand.</p>
 <p>Once you are happy with a function you have written, documenting it should be the first thing you do. If the project is not that big, or the function is not that important, it is perfectly fine to explain what the function does within its body. There should be at least three main points present within the documentation as shown <a href="https://google.github.io/styleguide/Rguide.xml#functiondocumentation">here</a>:</p>
 <ul>
-<li><p><strong>Description</strong> - A short descriptio of what the function does.</p></li>
+<li><p><strong>Description</strong> - A short description of what the function does.</p></li>
 <li><p><strong>Input</strong> - Explain what each of the arguments is for and what is its expected type.</p></li>
-<li><p><strong>Output</strong> - What is the function going to output</p></li>
+<li><p><strong>Output</strong> - What is the function going to output.</p></li>
 </ul>
-<p>However, if it is a big project in which other people are going to be involved in the future, you should be documenting your functions using the <a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html">roxygen package</a> The principles are the same, but you use a slightly queerer syntax so that in the end you get your documentation in the familiar .Rd format. Yes, that format is familiar because this is what you see when your write <code>?functionName</code> in the R console. And, yes, you would be able to write <code>?myFunction</code> and see your documentation in the Help tab.</p>
+<p>However, if it is a big project in which other people are going to be involved in the future, you should be documenting your functions using the <a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html">roxygen package</a> The principles are the same, but you use a slightly queerer syntax so that in the end you get your documentation in the familiar .Rd format. Yes, that format is familiar because this is what you see when your write <code>?functionName</code> in the R console. And, yes, you would be able to write <code>?myFunction</code> and see your documentation in the <em>Help</em> tab.</p>
 </div>
 </div>
 <div id="uh-oh-git" class="section level1">
 <h1>Uh, oh, Git</h1>
+<p>In this sections I will go through:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Feature Branch Workflow</strong><br />
+</li>
+<li><strong>Gitflow-like Workflow</strong></li>
+</ol>
 <p>Ok, now we are heading into deeper waters. Any self-respecting coder(developer, data scientist, etc.) have to use a version control software. Git is the most popular one simply because it is the best. You have a remote backup, you do branching and merging easily, and it gives you full freedom to create your own workflow.</p>
-<p>As I mentioned in the beginning, I have borrowed my workflow from the matured field of software engineering. What I use in my projects is the so called <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow">Feature Branch Workflow</a></p>
+<div id="feature-branch-workflow" class="section level3">
+<h3>Feature Branch Workflow</h3>
+<p>As I mentioned in the beginning, I have borrowed my workflow from the matured field of software engineering. What I use in my projects is the so called <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow">Feature Branch Workflow</a><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<div class="figure">
+<img src="/img/featurebranchflow.png" />
+
+</div>
 <p>The idea is that all feature development should take place in a dedicated branch. If you are producing a shiny dashboard or any other product as a final outcome of your project, then feature stands for feature. If you are working on a regular data analysis project, then feature stands for: data prepping, visualizing, modeling, etc.</p>
 <p>The main benefits of this workflow are <strong>reproducibility</strong>, <strong>cooperation</strong> and <strong>tidiness</strong>.</p>
-<div id="here-is-how-it-works" class="section level5">
-<h5>Here is how it works:</h5>
+<p>Here is how it works:</p>
 <ol style="list-style-type: decimal">
 <li>You initialize a repository</li>
 <li>You create a new branch for each of the main stages of your data analysis project - <em>data gathering, cleaning, visualization, modeling, etc</em>. These branches more or less follow the naming convention of the files in your <code>/R</code> folder, however, if a certain operation takes more effort, these could be the names of subfolders within <code>/R</code>, eg.<code>/R/data_gathering/scrape_google.R</code></li>
@@ -124,12 +140,22 @@ git merge featureX   </code></pre></li>
 <p>You should aim to have a master branch which when revisited could be rerun easily and it will reproduce fully your analysis. It more or less should serve the purpose of a markdown notebook. Anyone from the future looking at it should be comfortable with what you did.</p>
 <p>If someone is interested further in your project, though, they could checkout to a particular branch, e.g. <code>git checkout modeling</code>, and have a look at all different approaches you tried. Again, these approaches should be documented in the <em>readme</em> file.</p>
 <p>Another advantage that you get from this workflow is that it makes cooperation easy. Once you are done with the initial stages of your project like data gathering and probably data cleaning, several people could be trying different modeling approaches and not making a mess of the master branch.</p>
-<p>In addition to this workflow, if you are working on a data science product <code>shiny dashboard, API development, etc.</code> instead of a data analysis project you could add a development branch at the very beginning. This is simmilar to the so called the <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow Workflow</a> This development branch is used the same way you use the master branch in the Feature Branch Workflow.</p>
+</div>
+<div id="gitflow-like-workflow" class="section level3">
+<h3>Gitflow-like Workflow</h3>
+<p>In addition to this workflow, if you are working on a data science product <code>shiny dashboard, API development, etc.</code> instead of a data analysis project you could add a development branch at the very beginning. This is similar to the so called the <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow Workflow</a>. This development branch is used the same way you use the master branch in the Feature Branch Workflow.</p>
 <div class="figure">
 <img src="/img/gitflow.png" />
 
 </div>
-<p>Feature branches interact only with this development branch, and the development branch is the only one interacting with the master branch. Once you have a production ready version of your product, you merge with master and create a tag. The idea again is to keep your master branch even tidier. Additionally, it makes it easilier to have two separate teams - one working on bug fixing and another on new features.</p>
-<p>The last thing I would like to mention is <code>git rebase</code>. If you really care about having linear history, when going back to work on a feature branch instead of git merging with master you could use be rebasing. However, in order to do that you should be the only one working on that branch. Go <a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase">here</a> if you want to know more about it.</p>
+<p>Feature branches interact only with the development branch, and the development branch is the only one interacting with the master branch. Once you have a production ready version of your product, you merge with master and create a tag. The idea again is to keep your master branch as tidy as possible. Additionally, it makes it easilier to have two separate teams - one working on bug fixing and another on new features.</p>
+<p>The last thing I would like to mention is <code>git rebase</code>. If you really care about having linear history, instead of git merging your branches with master when you are back to the branch you could be git rebasing. However, in order to do that you should be the only one working on that branch. Go <a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase">here</a> if you want to know more about it.</p>
+<p>As this post has become a bit longer than envisioned, I will go through the git workflow example in another article.</p>
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Credits for the workflow pics to <a href="https://www.atlassian.com">www.atlassian.com</a><a href="#fnref1">↩</a></p></li>
+</ol>
 </div>

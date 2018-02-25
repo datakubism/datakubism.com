@@ -1,26 +1,53 @@
 name: Things we did in the past
 source:
   - icon: fa fa-signal
-    link: /about
+    link: #   
     name: Common Path Distortion Alert
-    description: Identify CPD issues within the customer's network. 
+    description: Identify CPD issues within the customer's fiber-optic network. Two-stage anomaly detection algorithm was used.
 
-  - icon: fa fa-github
+  - icon: fa fa-group
     link: #
     name: Super Detractors Identification
-    description: Reduce churn rates by correctly identifying unhappy customers.
+    description: Reducing churn rates by correctly identifying unhappy customers using Generalized Boosted Models. Insights on customer level were generated from partial dependence plots.
 
-  - icon: fa fa-github
+  - icon: fa fa-dashboard
     link: #
-    name: Dashboard creation for conjoin analysis
-    description: Scalable shiny dashboard created for better customer experience with the conjoint analysis
+    name: Dashboard Development for Conjoin Analysis
+    description: Scalable shiny dashboard created for better customer experience with the conjoint analysis.
   
-  - icon: fa fa-globe
+  - icon: fa fa-file-text-o
     link: #
-    name: Text analytics dashboard
+    name: Text Analytics Dashboard
     description: CRM solution for analyzing open-ended questions.
 
-  - icon: fa fa-globe
+  - icon: fa fa-line-chart
     link: #
-    name: Application scorecard development
-    description: Credit risk management for a large UK-based bank. 
+    name: Application Scorecard Development 
+    description: Assessing credit risk and automating decision process about granting a loan or not. The project portfolio was peronal loans of a large mutlinational bank.
+  
+  - icon: fa fa-arrows-h
+    link: #
+    name: Developing Decision Tree Models
+    description: The models were built for optimizing capital adequacy of a large bank in Asia and were in compliance with the governmental banking regulations.
+  
+  - icon: fa fa-line-chart
+    link: #
+    name: Behaviural, Propensity Upsale and Crossale Models
+    description: Identifying potential customers interested in having more credit products and assessing credit risk for an internatioal bank.
+    
+  - icon: fa fa-group
+    link: #
+    name: Long-Run Probability of Default
+    description: A model used in the stress testing process which was later on validated by the Bank of England.
+   
+  - icon: fa fa-line-chart
+    link: #
+    name: Customer Lifetime Value Calculation
+    description: Allowing adequate marketing strategy to take place and prevent churn for a Mobile Network Operator/Provider.
+    
+  - icon: fa fa-play
+    link: #
+    name: Development of Customer Recommendation Engine
+    description: Allowing the company to recommend suitable video and music content to its customers.
+    
+
