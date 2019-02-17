@@ -2,20 +2,17 @@ enable : true
 heading : Get In
 headingSpan : Touch
 title : Contact Details
-content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore adipisci.
+content : For any project inquires or general questions please don't hesitate to contact us.
 enable_maps : false
-mapLatitude : 51.5223477
-mapLongitude: -0.1622023
+mapLatitude : 42.6931322
+mapLongitude: 23.3344627
 contactDetails :
   - icon : tf-map-pin
-    info : "Khaja Road, Bayzid, Chittagong, Bangladesh"
+    info : "Sofia, Bulgaria"
     
   - icon : tf-ion-ios-telephone-outline
-    info : "Phone: +880-31-000-000"
-    
-  - icon : tf-ion-iphone
-    info : "Fax: +880-31-000-000"
+    info : "Phone: +359 888 038 791"
     
   - icon : tf-ion-ios-email-outline
-    info : "Email: hello@meghna.com"
+    info : "Email: team@datakubism.com"
     

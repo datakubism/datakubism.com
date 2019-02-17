@@ -1,13 +1,13 @@
 enable : true
-image : images/about/about-business-man.jpg
-title : We’re A Digital Design Agency.
-description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora itaque, autem dolores culpa cum mollitia voluptate nesciunt voluptatibus quasi.
-description2 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora itaque, autem dolores culpa cum mollitia voluptate nesciunt voluptatibus quasi. Aliquam tempora itaque, autem dolores culpa cum mollitia voluptate nesciunt voluptatibus quasi.
+image : images/about/chris-ried-512801-unsplash.jpg
+title : We’re An Analytics Consultancy Agency.
+description : While every company nowdays realizes the importance of using its data to its full capacity, not every company can develop the in-house data science resources needed to do so. This is where we come in.
+description2 : Combining our expansive machine learning and programming expertise with our understanding of business needs we can help you design, develop and implement solutions that transform raw data into actionable isnights.
 aboutItem : 
   - icon : tf-circle-compass
-    title : SEO Optimized
-    content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
+    title : Action Focused
+    content : Our top priority is that our analytics solutions help you run your business better and smarter.
     
   - icon : tf-hotairballoon
-    title : Easy Customization
-    content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
+    title : Cloud ready
+    content : We also have expertise in devOps which can help make sure your analytics applications are robust and scalable.

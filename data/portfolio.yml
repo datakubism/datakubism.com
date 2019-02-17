@@ -1,76 +1,55 @@
 enable : true
 heading : Our
-headingSpan : Works
+headingSpan : Projects
 filterList :
-  - filterType : photography
-    filterTitle : Photography
+  - filterType : machinelearning
+    filterTitle : Machine Learning
     
-  - filterType : design
-    filterTitle : Design
+  - filterType : creditrisk
+    filterTitle : Credit Risk Modelling
     
-  - filterType : development
-    filterTitle : Development
+  - filterType : dashboard
+    filterTitle : Interactive Dashboards
 
 portfolioItem :
-  - types : design
-    image : images/portfolio/portfolio-1.jpg
+  - types : machinelearning
+    image : images/portfolio/erik-odiin-616192-unsplash.jpg
     icon : tf-ion-android-search
     URL : #
-    title : Tag Design
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    title : Churn Prevention via Detractor Identification
+    description : Helped a large Swiss telecom to use usage data to identify cutomers that are likely detractors and contact them proactively.
     
-  - types : development
-    image : images/portfolio/portfolio-2.jpg
+  - types : creditrisk
+    image : images/portfolio/sharon-mccutcheon-556371-unsplash.jpg
     icon : tf-ion-android-search
     URL : #
-    title : Sound system
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    title : Income estimation
+    description : Helped a large British building society to estimate the income of their clients using transactional data.
     
-  - types : design development
-    image : images/portfolio/portfolio-3.jpg
+  - types : machinelearning dashboard
+    image : images/portfolio/carolyn-v-546925-unsplash.jpg
     icon : tf-ion-android-search
     URL : #
-    title : Clock Product
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    title : Topic Impact Dashboard
+    description : Helped a large German clothing retailer to analyze text feedback, extract topics and sentiment, and measure their effect on sales through an interactive dashboard.
     
-  - types : photography development
-    image : images/portfolio/portfolio-4.jpg
+  - types : machinelearning dashboard
+    image : images/portfolio/sean-patrick-murphy-551711-unsplash.jpg
     icon : tf-ion-android-search
     URL : #
-    title : Bottol Label
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    title : Product Feature Optimization
+    description : Developed a web tool for a French bottling company that allowed them to see how changing certain features of their products will affect their market share.
     
-  - types : design
-    image : images/portfolio/portfolio-5.jpg
+  - types : creditrisk
+    image : images/portfolio/robert-bye-431761-unsplash.jpg
     icon : tf-ion-android-search
     URL : #
-    title : Shopping Bag
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
-    
-  - types : photography
-    image : images/portfolio/portfolio-6.jpg
+    title : Loss Given Default Estimation
+    description : Developed a loss given default model for a credit card portfolio of a British banking insitution
+ 
+  - types : machinelearning dashboard
+    image : images/portfolio/tom-rumble-645202-unsplash.jpg
     icon : tf-ion-android-search
     URL : #
-    title : Tag Design
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
-    
-  - types : development
-    image : images/portfolio/portfolio-7.jpg
-    icon : tf-ion-android-search
-    URL : #
-    title : Business Card
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
-    
-  - types : design development
-    image : images/portfolio/portfolio-8.jpg
-    icon : tf-ion-android-search
-    URL : #
-    title : Stationary Design
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
-    
-  - types : design photography
-    image : images/portfolio/portfolio-2.jpg
-    icon : tf-ion-android-search
-    URL : #
-    title : Tag Design
-    description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    title : Real Estate Price and Neighbourhood Information App
+    description : Developed a web application that lets users see a predicted sales and rent price as well as various neighbourhood statistics for any property in Bulgaria.

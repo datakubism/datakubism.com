@@ -1,4 +1,4 @@
-enable : true
+enable : false
 heading : Latest
 headingSpan : Posts
-sharing : true
+sharing : false

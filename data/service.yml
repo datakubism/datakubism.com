@@ -2,26 +2,26 @@ enable : true
 heading : Our
 headingSpan : Services
 serviceItem :
-  - icon : tf-globe
-    title : WordPress Theme
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
-    
-  - icon : tf-ion-laptop
-    title : Responsive Design
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
-    
   - icon : tf-genius
-    title : Media &amp; Advertisement
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
+    title : Predictive Analytics
+    content : Many of the projects we have done in the past rely on advanced predictive modelling. These include customer trageting based on propensity to buy, identifying key drivers behind a market outcome, or extracting the topics that drive sales from text feedback.
+    
+  - icon : tf-ion-person-add
+    title : Churn Prevention
+    content : While also falling under the umbrella of predictive modelling, churn prediction takes a large portion of our portfolio. We use cutting edge methods to identify likely churners and recommend retention actions before its too late.
+    
+  - icon : tf-ion-shuffle
+    title : Forecasting
+    content : General time series forecasting at any time interval (monthly, daily, or hourly data) at any scale (single series to thousands of series).
+    
+  - icon : tf-ion-umbrella
+    title : Credit Risk
+    content : We have extensive experience working with clients in the financial industry. Past projects include credit scoring, and PD and LGD calculation for Basel III compliant models.
+    
+  - icon : tf-ion-cloud
+    title : Machine Learning Microservices
+    content : The solutions we develop are often part of a larger application. For seamless integration of our ML models with your existing processes and software we offer cloud-based microservice implementations.
     
   - icon : tf-dial
-    title : Graphic Design
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
-    
-  - icon : tf-target3
-    title : Apps Development
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
-    
-  - icon : tf-lifesaver
-    title : Networking
-    content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
+    title : Interactive Dashboards
+    content : Presenting and interpreting the results of data science work is one of the most important parts of each project. To that end we develop highly sophisticated and customized dashboards for interactive data exploration.
