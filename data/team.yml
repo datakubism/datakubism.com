@@ -2,7 +2,7 @@ enable : true
 heading : Our
 headingSpan : Team
 teamMember :
-  - image : images/team/dido.jpg
+  - image : images/team/deyan.jpg
     name : Deyan Spasov
     designation : Data Scientist
     description : Focused on implementation, deployment and reliable software development.
@@ -10,7 +10,7 @@ teamMember :
       - icon : tf-ion-social-twitter
         url : "https://twitter.com/DeanSpasov"
       - icon : tf-ion-social-linkedin
-        url : "https://www.linkedin.com/in/gdemirev/"
+        url : "https://www.linkedin.com/in/deanspasov/"
       
   - image : images/team/georgi.jpg
     name : Georgi Demirev
