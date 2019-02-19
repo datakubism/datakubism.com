@@ -21,3 +21,13 @@ teamMember :
         url : "https://twitter.com/Georgi_Demirev"
       - icon : tf-ion-social-linkedin
         url : "https://www.linkedin.com/in/gdemirev/"
+        
+  - image : images/team/hristo.jpg
+    name : Hristo Stoychev
+    designation : Data Scientist
+    description : Focused on credit rist modeling and research.
+    socialIcon :
+      - icon : tf-ion-social-twitter
+        url : "https://twitter.com/Georgi_Demirev"
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/gdemirev/"

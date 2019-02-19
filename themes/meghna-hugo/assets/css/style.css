@@ -9,6 +9,8 @@ Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive,
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,bold&subset=Latin");
 
 html {
   background-color: #353b43;
@@ -29,12 +31,12 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #afbac4;
 }
 
 p {
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 [scroll-behavior=smooth] {
@@ -769,16 +771,17 @@ a:hover {
 ==================================================================*/
 .call-to-action {
   background-attachment: fixed;
+  color: #ccc;
 }
 
 .call-to-action h2 {
   font-weight: 700;
-  color: #444;
+  color: #ddd;
 }
 
 .call-to-action p {
   font-size: 16px;
-  color: #666;
+  color: #ccc;
 }
 
 .call-to-action .btn-main {
@@ -1067,7 +1070,7 @@ a:hover {
   height: 50px;
   color: #fff;
   display: inline-block;
-  font-size: 20px;
+  font-size: 12px;
   border-radius: 30px;
 }
 

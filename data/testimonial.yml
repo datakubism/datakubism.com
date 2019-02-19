@@ -1,17 +1,17 @@
-enable : false
+enable : true
 bgImage : images/backgrounds/bg-2.jpg
 testimonialItem :
-  - name : Jonathon Andrew
-    image : images/team/client-1.jpg
-    date : Dec 26, 2018
-    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium minima ex, quia error, deserunt voluptatibus repellendus? Incidunt eligendi aliquam repellat molestias, vel sed optio rem odit quis ratione non consequuntur!
+  - name : TV Europe
+    image : images/team/evropa.jpeg
+    date : Jul 26, 2018
+    content : What you have done is amazing! We are definately giving it a shout out to our viewers.
     
-  - name : Jonathon Andrew
-    image : images/team/client-2.jpg
-    date : Dec 26, 2018
-    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium minima ex, quia error, deserunt voluptatibus repellendus? Incidunt eligendi aliquam repellat molestias, vel sed optio rem odit quis ratione non consequuntur!
+  - name : LG
+    image : images/team/liberty_global.jpg
+    date : Nov 12, 2018
+    content : The prototypes you have built have been very well received! Been a pleasure to work with you all.
     
-  - name : Jonathon Andrew
-    image : images/team/client-1.jpg
-    date : Dec 26, 2018
-    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium minima ex, quia error, deserunt voluptatibus repellendus? Incidunt eligendi aliquam repellat molestias, vel sed optio rem odit quis ratione non consequuntur!
+  - name : VJ Soft
+    image : images/team/vj_soft.png
+    date : Feb 26, 2019
+    content : Outstanding! Your work is of great contribution to the successful delivery of our project.
