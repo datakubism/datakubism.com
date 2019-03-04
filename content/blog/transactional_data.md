@@ -4,6 +4,7 @@ date: "2018-11-17T14:51:12+06:00"
 description: Identifying Upsale Opportunities by Analyzing Transactional Data
 image: images/blog/transactional_data.jpg
 title: Customer Segmentation Based on Transactional Data
+summary: The client wanted to deep dive into their transactional data, and identify cross-sell opportunities. Affordability index was to be estimated based on the current account data ...
 ---
 
 # The Problem:

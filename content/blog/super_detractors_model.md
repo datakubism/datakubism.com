@@ -4,6 +4,7 @@ date: "2019-01-12T12:52:36+06:00"
 description: MRS Award Winning Project
 image: images/blog/znps.jpg
 title: Reducing Churn Rate Using Super-Detractor Identification Model
+summary: This project won the 2018 MRS award for innovation in Data Analytics. The client uses customer satisfaction surveys to identify and contact unhappy customers ...
 ---
 
 This project won the 2018 MRS award for innovation in Data Analytics.

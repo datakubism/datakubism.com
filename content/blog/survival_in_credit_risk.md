@@ -4,6 +4,7 @@ date: "2018-02-08T17:32:12+06:00"
 description: Survival Analysis in Credit Risk Modeling
 image: images/blog/survival_in_credit_risk.jpg
 title: Application of Survival Analysis in Credit Risk Modeling
+summary: The client wanted to explore new ways of modelling credit default risk of existing customers by employing all available historic data and taking into account the ...
 ---
 
 # The Problem:

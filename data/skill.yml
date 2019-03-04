@@ -3,7 +3,7 @@ heading : Our
 headingSpan : Skills
 title : We’re skilled in wide range of machine learning techniques and software development tools.
 content : We are constantly learning and developing ourselves in order to stay ahead of the curve and keep offering outstanding quality at a reasonable price.
-image : images/about/iker-urteaga-246955-unsplash.jpg
+image : images/about/lego.jpg
 skillItem :
   - itemNumber : 01-
     itemName :  Machine Learning

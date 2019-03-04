@@ -4,6 +4,7 @@ date: "2018-03-03T13:33:12+06:00"
 description: Real Estate Valuation Portal
 image: images/blog/ocenime_bg.jpg
 title: Real Estate Valuation Portal
+summary: Lack of information on the real estate marketplace put potential buyers in an unfavorable position. Lots of fake, duplicated, and outdated adds are present on the ...
 ---
 
 # The Problem:
