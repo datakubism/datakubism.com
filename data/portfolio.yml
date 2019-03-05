@@ -5,51 +5,46 @@ filterList :
   - filterType : machinelearning
     filterTitle : Machine Learning
     
-  - filterType : creditrisk
-    filterTitle : Credit Risk Modelling
+  - filterType : datainsights
+    filterTitle : Data Insights
     
-  - filterType : dashboard
-    filterTitle : Interactive Dashboards
+  - filterType : products
+    filterTitle : Products
 
 portfolioItem :
-  - types : machinelearning
-    image : images/portfolio/erik-odiin-616192-unsplash.jpg
-    icon : tf-ion-android-search
-    URL : #
-    title : Churn Prevention via Detractor Identification
-    description : Helped a large Swiss telecom to use usage data to identify cutomers that are likely detractors and contact them proactively.
-    
-  - types : creditrisk
-    image : images/portfolio/sharon-mccutcheon-556371-unsplash.jpg
-    icon : tf-ion-android-search
-    URL : #
-    title : Income estimation
-    description : Helped a large British building society to estimate the income of their clients using transactional data.
-    
-  - types : machinelearning dashboard
-    image : images/portfolio/carolyn-v-546925-unsplash.jpg
-    icon : tf-ion-android-search
-    URL : #
-    title : Topic Impact Dashboard
-    description : Helped a large German clothing retailer to analyze text feedback, extract topics and sentiment, and measure their effect on sales through an interactive dashboard.
-    
-  - types : machinelearning dashboard
-    image : images/portfolio/sean-patrick-murphy-551711-unsplash.jpg
-    icon : tf-ion-android-search
-    URL : #
-    title : Product Feature Optimization
-    description : Developed a web tool for a French bottling company that allowed them to see how changing certain features of their products will affect their market share.
-    
-  - types : creditrisk
-    image : images/portfolio/robert-bye-431761-unsplash.jpg
-    icon : tf-ion-android-search
-    URL : #
-    title : Loss Given Default Estimation
-    description : Developed a loss given default model for a credit card portfolio of a British banking insitution
  
-  - types : machinelearning dashboard
-    image : images/portfolio/tom-rumble-645202-unsplash.jpg
-    icon : tf-ion-android-search
-    URL : #
-    title : Real Estate Price and Neighbourhood Information App
-    description : Developed a web application that lets users see a predicted sales and rent price as well as various neighbourhood statistics for any property in Bulgaria.
+  - types : machinelearning products
+    image : images/portfolio/ocenimebg.jpg
+    URL : /blog/ocenime_bg/
+    title : Real Estate Price and Neighbourhood Information Portal
+    description : Developed a web portal which gives users insightful information for any property in Bulgaria.
+
+  - types : machinelearning products
+    image : images/portfolio/appraiserai.jpg
+    URL : https://ocenime.bg
+    title : Real Estate Valuation Web Suite
+    description : A solutions helping banks in the mortgage lending process - from sale, through decission making, to risk calculations. 
+
+  - types : machinelearning datainsights
+    image : images/portfolio/churn.jpg
+    URL : /blog/super_detractors_model/
+    title : Churn Prevention via Detractor Identification
+    description : Helped a large telecom utilize its usage data to identify customers who are likely detractors and contact them proactively.
+    
+  - types : datainsights
+    image : images/portfolio/income_estimation.jpg
+    URL : /blog/transactional_data/
+    title : Income estimation
+    description : Helped a large building society to estimate the income of their clients using transactional data.
+   
+  - types : datainsights products
+    image : images/portfolio/product_optimization.jpg
+    URL : /blog/product_optimization/
+    title : Product Feature Optimization
+    description : Developed a solution for a bottling company which allowed them to see how changing certain features of their products affected their market share.
+    
+  - types : datainsights products
+    image : images/portfolio/topic_impact.jpg
+    URL : /blog/topic_impact/
+    title : Text analytics
+    description : Helped a large clothing retailer to analyze text feedback, extract topics and sentiment, and measure their effect on sales through an interactive dashboard

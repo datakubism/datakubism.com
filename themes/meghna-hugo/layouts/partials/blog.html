@@ -22,8 +22,8 @@
 
                     <div class="content">
                         <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                        <p>{{ .Summary }}</p>
-                        <a class="btn btn-transparent" href="{{ .Permalink }}">Read more</a>
+                        <p>{{ .Params.summary }}</p>
+                        <a class="btn btn-transparent my-button" href="{{ .Permalink }}">Read more</a>
                     </div>
                 </div>
             </article>

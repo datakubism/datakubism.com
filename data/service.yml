@@ -4,19 +4,19 @@ headingSpan : Services
 serviceItem :
   - icon : tf-genius
     title : Predictive Analytics
-    content : Many of the projects we have done in the past rely on advanced predictive modelling. These include customer trageting based on propensity to buy, identifying key drivers behind a market outcome, or extracting the topics that drive sales from text feedback.
+    content : Many of the projects we have done in the past rely on advanced predictive modelling. These include customer targeting based on propensity to buy, identifying key drivers behind a market outcome, or extracting the topics that drive sales from text feedback.
     
   - icon : tf-ion-person-add
     title : Churn Prevention
-    content : While also falling under the umbrella of predictive modelling, churn prediction takes a large portion of our portfolio. We use cutting edge methods to identify likely churners and recommend retention actions before its too late.
+    content : While also falling under the umbrella of predictive modelling, churn prediction takes a large portion of our portfolio. We use cutting edge methods to identify likely churners and recommend retention actions before it is too late.
     
   - icon : tf-ion-shuffle
     title : Forecasting
-    content : General time series forecasting at any time interval (monthly, daily, or hourly data) at any scale (single series to thousands of series).
+    content : We are well versed in in econometrics modelling and time series forecasting at any time interval and any scale.
     
   - icon : tf-ion-umbrella
     title : Credit Risk
-    content : We have extensive experience working with clients in the financial industry. Past projects include credit scoring, and PD and LGD calculation for Basel III compliant models.
+    content : We have extensive experience working with clients in the financial industry. Past projects include credit scoring, PD and LGD calculations for Basel III compliant models.
     
   - icon : tf-ion-cloud
     title : Machine Learning Microservices

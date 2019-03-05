@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://datakubism.com/"
 languageCode = "en-us"
 title = "dataKubism"
 
@@ -31,10 +31,10 @@ theme = "meghna-hugo"
 #    URL = "pricing"
 #    weight = 6
 
-#    [[menu.nav]]
-#    name = "Blog"
-#    URL = "blog"
-#    weight = 7
+    [[menu.nav]]
+    name = "Blog"
+    URL = "blog"
+    weight = 7
 
     [[menu.nav]]
     name = "Contact"
@@ -44,11 +44,11 @@ theme = "meghna-hugo"
 # Site params
 [params]
 home= "Home"
-logo = "images/appraiser_logo.png"
+logo = "images/logos/datakubism.png"
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 # Meta data
-description = "Data Science Consulting for Your Business"
-author = "Themefisher"
+description = "Unlock the Power of Your Data"
+author = "datakubism"
 # Google Analitycs
 googleAnalitycsID = "Your ID"
 custom_css = ["css/custom.css"]
@@ -58,8 +58,8 @@ custom_css = ["css/custom.css"]
     enable = true
     bgImage = "images/slider/ai-blur-codes-577585.jpg"
     icon = "tf-ion-code-working"
-    heading = "Unlock the power of your data"
-    content= "By using cutting-edge machine learning techniques and an agile ultra-flexible workflow, we can help you derive true business value through data analyics."
+    heading = "unlock the power of your data"
+    content= "Using cutting-edge machine learning techniques and an agile ultra-flexible workflow, we can help you derive true business value through data analyics."
     btn = true
     btnText="Explore Us"
     btnURL="#services"
@@ -74,38 +74,38 @@ custom_css = ["css/custom.css"]
 
     # counter
     [params.counter]
-    enable = false
-    bgImage = "images/backgrounds/armchairs-blur-business-296883.jpg"
-        [[params.counter.counterItem]]
-        title = "Happy Clients"
-        icon = "tf-ion-android-happy"
-        count = "320"
-
+    enable = true
+    bgImage = "images/backgrounds/wall.jpg"
         [[params.counter.counterItem]]
         title = "Projects completed"
-        icon = "tf-ion-archive"
-        count = "565"
+        icon = "tf-ion-battery-full"
+        count = "53"
 
         [[params.counter.counterItem]]
-        title = "Positive feedback"
+        title = "Models validated"
         icon = "tf-ion-thumbsup"
-        count = "95"
+        count = "12"
 
         [[params.counter.counterItem]]
-        title = "Cups of Coffee"
-        icon = "tf-ion-coffee"
-        count = "2500"
+        title = "Microservices deployed"
+        icon = "tf-ion-checkmark"
+        count = "23"
+
+        [[params.counter.counterItem]]
+        title = "Hours spent coding"
+        icon = "tf-ion-laptop"
+        count = "25000"
 
     # footer
     [params.footer]
-        copyright = "Themefisher Team"
-        copyrightURL = "http://www.themefisher.com"
+        copyright = "dataKubism Team"
+        copyrightURL = "https://www.datakubism.com"
 
         # social Icons
         [[params.footer.socialIcon]]
         icon = "tf-ion-social-facebook"
-        url = "#"
+        url = "https://www.facebook.com/ocenimebg/"
 
         [[params.footer.socialIcon]]
         icon = "tf-ion-social-linkedin"
-        url = "#"
+        url = "https://www.linkedin.com/company/28667141"

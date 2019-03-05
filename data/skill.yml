@@ -1,9 +1,9 @@
 enable : true
 heading : Our
 headingSpan : Skills
-title : We’ve skilled in wide range of machine learning tecniques and software development tools.
-content : We are constantly learning and devloping ourselves in order to stay ahead of the curve and keep offering outstanding quality at a reasonable price.
-image : images/about/iker-urteaga-246955-unsplash.jpg
+title : We’re skilled in wide range of machine learning techniques and software development tools.
+content : We are constantly learning and developing ourselves in order to stay ahead of the curve and keep offering outstanding quality at a reasonable price.
+image : images/about/lego.jpg
 skillItem :
   - itemNumber : 01-
     itemName :  Machine Learning
@@ -18,9 +18,9 @@ skillItem :
     itemPercent : 80%
     
   - itemNumber : 04-
-    itemName :  Machine Leraning application development
+    itemName :  Machine Learning Application Development
     itemPercent : 90%
     
   - itemNumber : 05-
-    itemName :  Data retrieval and web scraping 
-    itemPercent : 85%
+    itemName :  Data Retrieval and Web Scraping 
+    itemPercent : 99%

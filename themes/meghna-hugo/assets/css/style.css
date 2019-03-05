@@ -9,6 +9,8 @@ Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive,
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,bold&subset=Latin");
 
 html {
   background-color: #353b43;
@@ -29,12 +31,12 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #afbac4;
 }
 
 p {
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 [scroll-behavior=smooth] {
@@ -227,7 +229,7 @@ a:hover {
 }
 
 .btn-main {
-  background: #57cbcc;
+  background: #32a3a4;
   color: #fff;
   display: inline-block;
   font-size: 14px;
@@ -681,6 +683,7 @@ a:hover {
   border-bottom: 2px solid transparent;
   transition: .5s all;
   margin-bottom: 20px;
+  height: 490px;
 }
 
 .about .block:hover {
@@ -769,16 +772,17 @@ a:hover {
 ==================================================================*/
 .call-to-action {
   background-attachment: fixed;
+  color: #ccc;
 }
 
 .call-to-action h2 {
   font-weight: 700;
-  color: #444;
+  color: #ddd;
 }
 
 .call-to-action p {
   font-size: 16px;
-  color: #666;
+  color: #ccc;
 }
 
 .call-to-action .btn-main {
@@ -857,6 +861,11 @@ a:hover {
 
 .google-map #map-canvas {
   height: 400px;
+}
+
+.contact-info {
+  margin: auto;
+  text-align: center;
 }
 
 .contact-info p {
@@ -1067,7 +1076,7 @@ a:hover {
   height: 50px;
   color: #fff;
   display: inline-block;
-  font-size: 20px;
+  font-size: 12px;
   border-radius: 30px;
 }
 
@@ -1084,11 +1093,16 @@ a:hover {
   border-top: 1px solid rgba(236, 239, 241, 0.07);
   margin-bottom: 40px;
   box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
+  height: 450px;
 }
 
 .service-block .service-icon {
   margin-bottom: 10px;
   font-size: 50px;
+}
+
+.my-services {
+ height: 250px; 
 }
 
 /*=================================================================
@@ -1156,6 +1170,7 @@ a:hover {
 .team-member {
   background-color: #292F36;
   margin-bottom: 10px;
+  height: 430px;
 }
 
 .team-member:hover .mask {
@@ -1232,6 +1247,7 @@ a:hover {
 
 .member-meta {
   padding: 15px;
+  height: 175px;
 }
 
 .member-meta h4 {
@@ -1366,6 +1382,15 @@ a:hover {
   font-size: 20px;
   line-height: 1.5;
   text-transform: capitalize;
+}
+
+.my-button {
+  position: absolute;
+  bottom: 4%;
+}
+
+.post-block .content {
+  height: 300px;
 }
 
 .note .media-wrapper {

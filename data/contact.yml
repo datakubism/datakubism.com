@@ -2,8 +2,8 @@ enable : true
 heading : Get In
 headingSpan : Touch
 title : Contact Details
-content : For any project inquires or general questions please don't hesitate to contact us.
-enable_maps : false
+content : For any project inquires or general questions, please, do not hesitate to contact us.
+enable_maps : true
 mapLatitude : 42.6931322
 mapLongitude: 23.3344627
 contactDetails :
@@ -11,7 +11,7 @@ contactDetails :
     info : "Sofia, Bulgaria"
     
   - icon : tf-ion-ios-telephone-outline
-    info : "Phone: +359 888 038 791"
+    info : "Phone: +359 882 985 790"
     
   - icon : tf-ion-ios-email-outline
     info : "Email: team@datakubism.com"

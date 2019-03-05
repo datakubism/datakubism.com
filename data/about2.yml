@@ -1,8 +1,8 @@
 enable : true
-image : images/about/chris-ried-512801-unsplash.jpg
-title : We’re An Analytics Consultancy Agency.
-description : While every company nowdays realizes the importance of using its data to its full capacity, not every company can develop the in-house data science resources needed to do so. This is where we come in.
-description2 : Combining our expansive machine learning and programming expertise with our understanding of business needs we can help you design, develop and implement solutions that transform raw data into actionable isnights.
+image : images/about/coding.jpg
+title : We’re an Analytics Consultancy Agency.
+description : While every company nowadays realizes the importance of using its data to its full capacity, not every company can develop the in-house data science resources needed to do so. This is where we come in.
+description2 : Combining our expansive machine learning and programming expertise with our understanding of business needs we can help you design, develop and implement solutions that transform raw data into actionable insights.
 aboutItem : 
   - icon : tf-circle-compass
     title : Action Focused
@@ -10,4 +10,4 @@ aboutItem :
     
   - icon : tf-hotairballoon
     title : Cloud ready
-    content : We also have expertise in devOps which can help make sure your analytics applications are robust and scalable.
+    content : We also have expertise in DevOps which can help make sure your analytics applications are robust and scalable.

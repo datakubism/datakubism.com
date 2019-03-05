@@ -4,20 +4,40 @@ headingSpan : Team
 teamMember :
   - image : images/team/deyan.jpg
     name : Deyan Spasov
-    designation : Data Scientist
+    designation : Data Science
     description : Focused on implementation, deployment and reliable software development.
     socialIcon :
       - icon : tf-ion-social-twitter
-        url : "https://twitter.com/DeanSpasov"
+        url : "https://twitter.com/datakubism"
       - icon : tf-ion-social-linkedin
         url : "https://www.linkedin.com/in/deanspasov/"
       
   - image : images/team/georgi.jpg
     name : Georgi Demirev
-    designation : Data Scientist
+    designation : Data Science
     description : Focused on model development, feature engineering, and ML research.
     socialIcon :
       - icon : tf-ion-social-twitter
         url : "https://twitter.com/Georgi_Demirev"
       - icon : tf-ion-social-linkedin
         url : "https://www.linkedin.com/in/gdemirev/"
+        
+  - image : images/team/hristo.jpg
+    name : Hristo Stoychev
+    designation : Data Science
+    description : Focused on credit rist modeling and research.
+    socialIcon :
+      - icon : tf-ion-social-twitter
+        url : "https://twitter.com/datakubism"
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/hristo-stoychev-41bba1108/"
+        
+  - image : images/team/marian.jpg
+    name : Marian Todorov
+    designation : Business Development
+    description : Focused on building client relations.
+    socialIcon :
+      - icon : tf-ion-social-twitter
+        url : "https://twitter.com/datakubism"
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/marian-todorov-5498795a/"
