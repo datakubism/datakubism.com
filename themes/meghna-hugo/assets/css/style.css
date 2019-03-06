@@ -614,7 +614,7 @@ a:hover {
 
 @media (max-width: 480px) {
   .hero-area .block h1 {
-    font-size: 60px;
+    font-size: 36px;
   }
 }
 
@@ -623,6 +623,12 @@ a:hover {
   font-size: 20px;
   width: 70%;
   margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .hero-area .block p {
+    font-size: 18px;
+  }
 }
 
 .hero-area .block .btn-transparent {
@@ -684,6 +690,18 @@ a:hover {
   transition: .5s all;
   margin-bottom: 20px;
   height: 490px;
+}
+
+@media (max-width: 330px) {
+  .about .block  {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+  .about .block  {
+    font-size: 20px;
+  }
 }
 
 .about .block:hover {
@@ -1044,6 +1062,12 @@ a:hover {
   top: 45%;
 }
 
+@media (max-width: 330px) {
+  .portfolio-block:hover .caption {
+    font-size: 14px;
+  }
+}
+
 .portfolio-block:hover .caption {
   opacity: 1;
   top: 55%;
@@ -1103,6 +1127,12 @@ a:hover {
 
 .my-services {
  height: 250px; 
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+  .my-services  {
+    font-size: 18px;
+  }
 }
 
 /*=================================================================
@@ -1171,6 +1201,12 @@ a:hover {
   background-color: #292F36;
   margin-bottom: 10px;
   height: 430px;
+}
+
+@media (max-width: 769px) {
+  .team-member {
+    height: 480px;
+  }
 }
 
 .team-member:hover .mask {
@@ -1375,6 +1411,12 @@ a:hover {
 
 .post-block .content {
   padding: 20px;
+}
+
+@media (max-width: 330px) {
+    .post-block .content p {
+        font-size: 14px;
+    }
 }
 
 .post-block .content h3 {
