@@ -56,7 +56,7 @@ custom_css = ["css/custom.css"]
     # Banner Section
     [params.banner]
     enable = true
-    bgImage = "images/slider/ai-blur-codes-577585.jpg"
+    bgImage = "images/backgrounds/main_background.jpg"
     icon = "tf-ion-code-working"
     heading = "unlock the power of your data"
     content= "Using cutting-edge machine learning techniques and an agile ultra-flexible workflow, we can help you derive true business value through data analyics."
