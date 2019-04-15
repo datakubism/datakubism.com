@@ -17,4 +17,4 @@ All open-source information for the Sofia’s real estate market was collected a
 
 # Deliverables:
 
-People are now able to inspect their neighbourhood and assess what their property is worth on the [www.ocenime.bg](https://www.ocenime.bg).
+People are now able to inspect their neighbourhood and assess what their property is worth at [www.ocenime.bg](https://www.ocenime.bg).

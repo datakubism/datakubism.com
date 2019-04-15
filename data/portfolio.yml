@@ -8,6 +8,9 @@ filterList :
   - filterType : datainsights
     filterTitle : Data Insights
     
+  - filterType : healthcare
+    filterTitle : Healthcare
+    
   - filterType : products
     filterTitle : Products
 
@@ -37,14 +40,14 @@ portfolioItem :
     title : Income estimation
     description : Helped a large building society to estimate the income of their clients using transactional data.
    
-  - types : datainsights products
+  - types : healthcare products
     image : images/portfolio/product_optimization.jpg
-    URL : /blog/product_optimization/
-    title : Product Feature Optimization
-    description : Developed a solution for a bottling company which allowed them to see how changing certain features of their products affected their market share.
+    URL : /blog/x_ray/
+    title : Automatic Detection based on X-Ray Images
+    description : Developed a computer vision model trained to predict 8 different conditions on several hundred thousands of xray images.
     
   - types : datainsights products
     image : images/portfolio/topic_impact.jpg
-    URL : /blog/topic_impact/
+    URL : /blog/text_analytics/
     title : Text analytics
     description : Helped a large clothing retailer to analyze text feedback, extract topics and sentiment, and measure their effect on sales through an interactive dashboard
