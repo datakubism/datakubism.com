@@ -18,14 +18,22 @@ teamMember :
       - icon : tf-ion-social-linkedin
         url : "https://www.linkedin.com/in/gdemirev/"
         
-  - image : images/team/hristo.jpg
-    name : Hristo Stoychev
+  - image : images/team/kalina.jpg
+    name : Kalina Cherneva
     designation : Data Science
     description : Focused on credit rist modeling and research.
     socialIcon :
       - icon : tf-ion-social-linkedin
-        url : "https://www.linkedin.com/in/hristo-stoychev-41bba1108/"
+        url : "https://www.linkedin.com/in/kalina-cherneva-3573ab4a/"
         
+  - image : images/team/mihail.jpg
+    name : Mihail Zhelyazkov
+    designation : Creative Director
+    description : Focused on branding and design.
+    socialIcon :
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/mihail-zhelyazkov/"
+      
   - image : images/team/marian.jpg
     name : Marian Todorov
     designation : Business Development
@@ -33,3 +41,12 @@ teamMember :
     socialIcon :
       - icon : tf-ion-social-linkedin
         url : "https://www.linkedin.com/in/marian-todorov-5498795a/"
+
+  - image : images/team/ana.jpg
+    name : Ana Petkova
+    designation : Business Development
+    description : Focused on web presence, SEO and digital marketing.
+    socialIcon :
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/ana-petkova-923a66b9/"
+      
